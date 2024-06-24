@@ -20,7 +20,7 @@ public class WebOrder {
     @ManyToOne(optional = false)
     @JoinColumn(name = "address_id", nullable = false)
     private Address address;
-
+    /** The quantities ordered. */
 
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.REMOVE, orphanRemoval = true)
